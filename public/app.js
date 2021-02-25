@@ -27,7 +27,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&units=m
   var tempMinValue =  data['main']['temp_min'];
   var tempMaxValue =  data['main']['temp_max'];
   var windSpeedValue = data['wind']['deg'];
-  var rainValue = data['rain'];
+  var rainValue = data['rain']['1h'];
 
   main.innerHTML = nameValue;
   desc.innerHTML = "Current Weather Conditions - "+descValue;
